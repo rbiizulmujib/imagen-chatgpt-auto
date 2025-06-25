@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Prompt Injector",
+  "version": "1.0",
+  "description": "Kirim prompt otomatis ke ChatGPT, unduh hasil, dan tetap berjalan di background.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Auto Prompt"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
